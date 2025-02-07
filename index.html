@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ai.png" type="image/x-icon">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&icon_names=send" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="chatbox">
+
+            <div class="botText">
+                <div class="img">
+                    <img class="ai" src="assets/ai.png" alt="">
+                </div>
+                <div class="text">
+                    hello! how may i help you today...
+                </div>
+            </div>
+
+            <!-- 
+            <div class="usertext">
+                <div class="img">
+                    <img class="ai" src="user.png">
+                </div>
+                <div class="text">
+                    heloo
+                </div>
+            </div> -->
+
+        </div>
+        <div class="search">
+            <span><textarea style="resize: none;" name="input" id="input"
+                    placeholder="Message chatbot....."></textarea></span>
+            
+            
+            <span onclick="usertext()" id="but"
+                style="color: white;font-size: 2.5rem;transform:rotate(-45deg);margin-bottom: 5px;"
+                class="material-symbols-outlined">
+                send
+            </span>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

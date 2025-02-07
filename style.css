@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(45, 52, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.chatbox{
+    border-radius: 0.5rem;
+    margin-top: 4rem;
+    width: 80%;
+    height: 80%;
+    background-color: #121212;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+.chatbox::-webkit-scrollbar{
+ width: 2px;
+}
+
+.search{
+    /* position: fixed; */
+   
+    display: flex;
+    align-items: center;
+   
+}
+#input{
+    padding: 10px;
+    width: 660px;
+    font-size: 1rem;
+    background-color:black;
+    border-radius: 1rem;
+    color: white;
+}
+
+#input::placeholder{
+    font-weight: 600;
+    margin-top: 5px;
+    color: white;
+}
+.search span{
+    margin-left: 1rem;
+}
+
+.botText{
+    position: relative;
+    color: white;
+    /* height: 80px; */
+    display: flex;
+    align-items: center;
+   
+}
+.usertext{
+    position: relative;
+    color: white;
+    /* height: 80px; */
+    display: flex;
+    align-items: center;
+    left: 62%;  
+}
+
+
+.usertext .text{
+    background-color: black;
+}
+
+
+
+
+.usertext img{
+    height: 40px;
+}
+
+.text{
+    background-color: #253645;
+    width: 300px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    box-shadow: 2px 2px 2px black;
+    margin-bottom: 50px;
+}
+
+
+
+
+img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.ai {
+    filter: drop-shadow(2px 2px 10px grey);
+}
+
+#ani {
+    height: 50px;
+    width: 100px;
+}
+
+#dir{
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+#dir input{
+    padding: 4px;
+    font-size: 10px;
+}
