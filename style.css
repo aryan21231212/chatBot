@@ -88,7 +88,6 @@
 
 .text{
     background-color: #253645;
-    width: 300px;
     padding: 10px;
     border-radius: 0.5rem;
     font-size: 16px;
@@ -131,4 +130,9 @@ img {
     #input{
         width: 200px;
     }
+    .usertext{
+        left: 40%;
+    }
+
+   
 }
