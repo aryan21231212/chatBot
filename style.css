@@ -125,3 +125,10 @@ img {
     padding: 4px;
     font-size: 10px;
 }
+
+
+@media screen and (max-width:500px) {
+    #input{
+        width: 200px;
+    }
+}
