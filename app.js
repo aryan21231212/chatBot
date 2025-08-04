@@ -32,6 +32,11 @@ async function generateResponse(text, userMessage) {
     chatbox.scrollTo({ top: chatbox.scrollHeight, behavior: "smooth" })
 }
 
+document.addEventListener('keydown',(e)=>{
+    if(e.key === 'Enter'){
+        usertext();
+    }
+})
 
 
 function usertext() {
@@ -48,7 +53,14 @@ function usertext() {
     let text = document.createElement('div');
     text.className = "text";
     usertext.appendChild(text);
-    text.innerHTML = search.value;
+
+    let val = search.value
+    if (val.trim() === '') {
+        alert("Please Enter Valid Input");
+        return;
+    }
+
+    text.innerHTML = val;
     chatbox.appendChild(usertext);
     let userMessage = search.value;
     search.value = "";
