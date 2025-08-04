@@ -32,6 +32,11 @@ async function generateResponse(text, userMessage) {
     chatbox.scrollTo({ top: chatbox.scrollHeight, behavior: "smooth" })
 }
 
+document.addEventListener('keydown',(e)=>{
+    if(e.key === 'Enter'){
+        usertext();
+    }
+})
 
 
 function usertext() {
